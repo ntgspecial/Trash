@@ -16,7 +16,7 @@ Ports = [587, 25, 465]
 for Host in Hosts:
     for Port in Ports:
         if CheckSmtpServer(Host, Port):
-            print("SMTP server is accessible With "+Host+':'+Port)
+            print("SMTP server is accessible With "+Host+':'+str(Port))
         else:
             print("SMTP server is not accessible")
 
